@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <mat-sidenav-container class="example-container">
+      <mat-sidenav #sidenav mode="side">Sidenav content</mat-sidenav>
+      <mat-sidenav-content>
+        <button mat-button-raised (click)="sidenav.toggle()">
+          <mat-icon aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
+
+        </button>
+        Main content</mat-sidenav-content>
+    </mat-sidenav-container>
+
+  </div>
+  <ul class="nav">
+    <li routerLink="/" class="nav-item" routerLinkActive="active" routerLinkActiveOptions="{exact:true}">Home</li>
+    <li routerLink="/upload" class="nav-item">Upload</li>
+  </ul>
+</div>
+
